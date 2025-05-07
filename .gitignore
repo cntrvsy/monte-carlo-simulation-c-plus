@@ -1,0 +1,55 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+*.obj
+*.exe
+*.log
+*.tlog
+*.pdb
+*.ilk
+*.aps
+*.pch
+*.idb
+
+# Visual Studio files
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results of MSBuild
+*.cache
+*.dbmdl
+
+# CMake files (if using CMake)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Others
+*.opensdf
+*.sdf
+*.ipch
+*.log
+*.lastbuildstate
+
+# Windows specific
+Thumbs.db
+Desktop.ini
+
+# Backup files
+*~ 
+*.bak
+*.tmp
+
+# Optional: ignore generated project files if not sharing solution files
+# *.sln
+# *.vcxproj
+# *.vcxproj.filters
+# *.vcxproj.user
+
+# Crash dumps
+*.dmp
