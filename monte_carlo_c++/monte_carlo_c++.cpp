@@ -87,7 +87,7 @@ int main() {
 
     // Calculate elapsed time
     auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> duration = end - start;
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 
     // Print results
     std::cout << "\nResults after " << years << " years:\n";
@@ -99,7 +99,7 @@ int main() {
     std::cout << "  25th percentile: $" << p25 << "\n";
     std::cout << "  75th percentile: $" << p75 << "\n";
     std::cout << "  95th percentile: $" << p95 << " (best case scenario)\n";
-    std::cout << "\nSimulation completed in " << duration.count() << " seconds\n";
+    std::cout << "\nSimulation completed in " << duration.count() << "ms\n";
 
     // Prompt the user to press any key before exiting
     std::cout << "\nPress any key to exit...\n";
